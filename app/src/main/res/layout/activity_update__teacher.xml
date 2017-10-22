@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruchita.wifi_attendance_management.Update_Teacher">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Teach_Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Teach_Name"
+        android:layout_marginTop="35dp"
+        android:fontFamily="cursive"
+        android:text="Enter Details"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/Teach_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textColorHint="#585454" />
+
+    <EditText
+        android:id="@+id/Teach_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Teach_Name"
+        android:layout_alignLeft="@+id/Teach_Name"
+        android:layout_alignRight="@+id/Teach_Name"
+        android:layout_alignStart="@+id/Teach_Name"
+        android:layout_below="@+id/Teach_Name"
+        android:layout_marginTop="11dp"
+        android:width="150dp"
+        android:ems="10"
+        android:hint="Enter Roll Number"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textColorHint="#585454" />
+
+    <EditText
+        android:id="@+id/Teach_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Teach_ID"
+        android:layout_alignStart="@+id/Teach_ID"
+        android:layout_below="@+id/Teach_ID"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Enter Subject"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textColorHint="#585454" />
+
+    <EditText
+        android:id="@+id/teach_un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Teach_sub"
+        android:layout_alignStart="@+id/Teach_sub"
+        android:layout_below="@+id/Teach_sub"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textColorHint="#585454" />
+
+    <Button
+        android:id="@+id/Update_Data"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/holo_green_light"
+        android:text="UPDATE"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/backup_button"
+        android:layout_alignBottom="@+id/backup_button"
+        android:layout_toEndOf="@+id/backup_button"
+        android:layout_marginStart="48dp" />
+
+    <Button
+        android:id="@+id/backup_button"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="37dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="BACK"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/teach_un"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

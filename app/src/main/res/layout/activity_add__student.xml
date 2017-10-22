@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruchita.wifi_attendance_management.Add_Student">
+
+
+
+    <EditText
+        android:id="@+id/writename"
+        android:hint="Student Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFF"
+        android:layout_above="@+id/writeroll"
+        android:layout_alignLeft="@+id/writeroll"
+        android:layout_alignStart="@+id/writeroll" />
+
+    <EditText
+        android:id="@+id/writeroll"
+        android:hint="Student RollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFF"
+        android:layout_above="@+id/writebranch"
+        android:layout_alignLeft="@+id/writebranch"
+        android:layout_alignStart="@+id/writebranch" />
+
+    <EditText
+        android:id="@+id/writebranch"
+        android:hint="Branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFF"
+        android:layout_above="@+id/writeyear"
+        android:layout_alignLeft="@+id/writeyear"
+        android:layout_alignStart="@+id/writeyear" />
+
+    <EditText
+        android:id="@+id/writediv"
+        android:hint="Division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="13dp"
+        android:textColor="#FFFF"
+        android:layout_above="@+id/writeaddress"
+        android:layout_alignLeft="@+id/writeaddress"
+        android:layout_alignStart="@+id/writeaddress" />
+
+    <EditText
+        android:id="@+id/writeyear"
+        android:hint="Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFF"
+        android:layout_above="@+id/writediv"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/writeaddress"
+        android:hint="Mac Add. of Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/writemobile"
+        android:textColor="#FFFF"
+        android:layout_alignLeft="@+id/writemobile"
+        android:layout_alignStart="@+id/writemobile" />
+
+    <EditText
+        android:id="@+id/writemobile"
+        android:hint="Mobile No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:textColor="#FFFF"
+        android:inputType="text"
+        android:layout_above="@+id/back"
+        android:layout_alignLeft="@+id/writeyear"
+        android:layout_alignStart="@+id/writeyear" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/save"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textColor="#fb0a0008"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="27dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="#fb0a0008"
+        android:textSize="20dp" />
+
+</RelativeLayout>

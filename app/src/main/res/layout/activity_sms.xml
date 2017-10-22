@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruchita.wifi_attendance_management.SMSActivity">
+
+
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+
+        android:ems="10"
+        android:hint="Vaild phone number"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etMessage"
+        android:layout_alignStart="@+id/etMessage" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="181dp"
+        android:text="SEND"
+        android:textSize="20dp"
+        android:background="#ffff"
+        android:layout_below="@+id/etPhone"
+        android:layout_alignRight="@+id/etPhone"
+        android:layout_alignEnd="@+id/etPhone"
+        android:hint="Message Type here"/>
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Successfully registered!!" />
+</RelativeLayout>

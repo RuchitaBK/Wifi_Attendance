@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruchita.wifi_attendance_management.Admin">
+
+
+    <Button
+        android:id="@+id/add_stud"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+
+        android:background="@android:color/holo_blue_light"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:text="add Student"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/update_Stud"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+
+
+        android:background="@android:color/holo_orange_dark"
+        android:text="Update Student"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/add_stud"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/add_teacher"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:background="@android:color/holo_orange_dark"
+
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Add teacher"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/update_Stud"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:id="@+id/update_teacher"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:background="@android:color/holo_orange_dark"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="update teacher"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/add_teacher"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>
